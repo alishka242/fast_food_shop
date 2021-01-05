@@ -47,7 +47,13 @@ class Burger {
             price: this.#size.price + this.#filling.price + this.#spice.price
         };
     }
+
+    getInfo(){
+        return `Информация о бургере: 
+Калорийность: ${this.cals}
+Цена: ${this.price}`
+    }
 }
 
 const cheeseburger = new Burger('small', 'cheese', 'mazik');
-console.log(cheeseburger);
+console.log(cheeseburger.getInfo());
