@@ -7,8 +7,8 @@ class BurgerItem {
 
 class Burger {
     #sizes = {
-        small: new BurgerItem(50, 10),
-        big: new BurgerItem(100, 20),
+        small: new BurgerItem(50, 20),
+        big: new BurgerItem(100, 40),
     };
     #fillings = {
         cheese: new BurgerItem(10, 20),
@@ -57,3 +57,6 @@ class Burger {
 
 const cheeseburger = new Burger('small', 'cheese', 'mazik');
 console.log(cheeseburger.getInfo());
+
+const bigBurger = new Burger('big', 'salad', 'default');
+console.log(bigBurger.getInfo());
